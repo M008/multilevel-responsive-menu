@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style/reset.css">
+   <link rel="stylesheet" href="./style/style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <!-- BEM
+block: menu, element: menu item, modifier:has child item:
+desktop:
+tablet:768
+mobile:
+-->
+   <!-- header>nav>.nav.container>ul.__menu>li.__menu-item*5>a.__link|bem -->
+   <!-- ul.sub-menu>li.__item*3>a[href=#].__link{$}|bem -->
+   <header>
+      <nav>
+         <div class="nav container">
+            <ul class="nav nav__menu">
+               <li class="nav nav__menu-item"><a href="" class="nav nav__link">Home</a></li>
+               <li class="nav nav__menu-item nav__menu-item--has-children"><a href="" class="nav nav__link">Items</a>
+                  <!-- sub-menu - kolejny block start-->
+                  <ul class="sub-menu">
+                     <li class="sub-menu sub-menu__item"><a href="#" class="sub-menu sub-menu__link">Item lorem 1</a>
+                     </li>
+                     <li class="sub-menu sub-menu__item"><a href="#"
+                           class="sub-menu sub-menu__link sub-menu__link--has-children">Lorem Ipsum lorem 2</a>
+                        <!-- blok zagnieżdżony w bloku :-D start-->
+                        <ul class="sub-menu">
+                           <li class="sub-menu sub-menu__item"><a href="#" class="sub-menu sub-menu__link">Item lorem
+                                 1</a></li>
+                           <li class="sub-menu sub-menu__item"><a href="#" class="sub-menu sub-menu__link">Item lorem
+                                 ipsum2</a></li>
+                           <li class="sub-menu sub-menu__item"><a href="#" class="sub-menu sub-menu__link">Item 3</a>
+                           </li>
+                        </ul>
+                        <!-- blok zagnieżdżony w bloku :-D end-->
+                     </li>
+                     <li class="sub-menu sub-menu__item"><a href="#" class="sub-menu sub-menu__link">Item lorem ipsum
+                           ipsum 3</a></li>
+                  </ul>
+                  <!-- sub-menu - kolejny block end-->
+               </li>
+               <li class="nav nav__menu-item"><a href="" class="nav nav__link">Settings</a></li>
+               <li class="nav nav__menu-item"><a href="" class="nav nav__link">Contact</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+
+</body>
+
+</html>
